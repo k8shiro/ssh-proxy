@@ -1,5 +1,12 @@
 # 使い方
 
+.envを編集してください
+
+```
+SQUID_USERNAME=proxyuser
+SQUID_PASSWORD=proxypassword
+```
+
 
 コンテナを起動
 
@@ -23,3 +30,4 @@ ssh root@192.168.2.8 -p 80 -i <さっき保存した秘密鍵ファイル> -L 90
 ```
 
 これでlocalhost:9090をブラウザでプロキシとして設定すればOK!!
+proxyには.envで指定したユーザ/パスワードで接続できます。
