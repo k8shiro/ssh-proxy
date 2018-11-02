@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ssh:
+    build:
+      context: ./ssh
+    ports:
+      - "80:22"
+  squid:
+    image: robhaswell/squid-authenticated
+    environment:
+      SQUID_USERNAME: ${SQUID_USERNAME}
+      SQUID_PASSWORD: ${SQUID_PASSWORD}
