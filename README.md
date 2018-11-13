@@ -1,4 +1,6 @@
 # 使い方
+※ Do at your own risk.
+
 
 .envを編集してください
 
